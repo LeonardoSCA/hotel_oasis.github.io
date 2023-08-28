@@ -1,0 +1,110 @@
+.header {
+    transition: 0.7s;
+    align-items: center;
+    height: 85px;
+}
+
+.header .logo{
+    cursor: pointer;
+}
+
+.header .logo img {
+    margin-left: 28px;
+    width: 90px; /* Ancho de la imagen */
+    height: auto; /* Altura ajustada automáticamente */
+    display: flex;
+    align-items: center;
+}
+
+.header .logo img:hover{
+    transform: scale(1.2);
+}
+
+.header .nav-links{
+    list-style: none;
+}
+
+.header .nav-links li{
+    display: inline-block;
+}
+
+.header .nav-links li:hover{
+    transform: scale(1.1);
+}
+
+
+.header .nav-links a {
+    font-size: 700;
+    color: black;
+    text-decoration: none;
+    
+}
+
+nav li {
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+.header .nav-links li a:hover {
+    color:white;
+}
+
+
+
+/**
+.header .btn button{
+    font-weight: 700;
+    color: white;
+    padding: 9px 25px;
+    background: #848484;
+    border: none;
+    border-radius:15px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+
+}
+
+.header .btn button:hover{
+    background-color: white;
+    color:#ff4500;  
+    transform: scale(1.1);
+}*/
+
+
+.btn-login {
+    font-weight: 700;
+    color: white;
+    padding: 9px 25px;
+    background-color: #848484;
+    border: none;
+    border-radius:15px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+.header .btn button:hover{
+    background-color: white;
+    color:#ff4500;  
+    transform: scale(1.1);
+}
+
+.btn-register {
+    font-weight: 700;
+    color: white;
+    padding: 9px 25px;
+    margin: 10px 20px;
+    background-color:black;
+    border: none;
+    border-radius:15px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    
+}
+
+
+
+
+.navigation a{
+    position: relative;
+    margin-top: auto;
+}

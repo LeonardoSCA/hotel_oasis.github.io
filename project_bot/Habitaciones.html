@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<link rel="stylesheet" type="text/css" href="style_fondo.css">
+	<link rel="stylesheet" type="text/css" href="stiles/style_chat.css">
+	<link rel="stylesheet" type="text/css" href="stiles/style_footer.css">
+	<link rel="stylesheet" type="text/css" href="stiles/style_header.css">
+	<link rel="stylesheet" type="text/css" href="stiles/style_habitaciones.css">
+	<script src="script.js"></script>
+	<title>Habitaciones</title>
+</head>
+<body class = "zona1">
+	<header class="header">
+		<a class="logo" >
+			<img src="img/HotelOasis.png" >
+		</a>
+			
+		<nav>
+			<ul class="nav-links"> 
+				<li><a href="index.html">Inicio</a></li>
+				<li><a href="Habitaciones.html">Habitaciones</a></li>
+				<li><a href="Servicios.html">Servicios</a></li>
+                <li><a href="Q&A.html">Q&A</a></li>
+			</ul>
+		</nav>
+
+		<a class="btn">
+			<button class="btn-login">Iniciar sesión</button>
+			<button class="btn-register">Registrarse</button>
+		</a>
+	</header>
+
+    <!-- Habitaciones -->
+
+	<section class="main-content">
+		<section class="main-content-text">
+			<h1>Habitación Familiar</h1>
+			<p>Disfruta de una estancia inolvidable en nuestra amplia y acogedora Habitación Familiar. Ideal para familias o grupos que buscan comodidad y espacio.</p>
+			<p>Esta habitación cuenta con una cómoda cama grande y camas individuales adicionales, lo que te brinda la flexibilidad que necesitas para tu estadía. Relájate y descansa en un ambiente diseñado pensando en la comodidad de todos.</p>
+			<p>Además, podrás disfrutar de todas las comodidades y servicios que ofrece Hotel Oasis. Desde la piscina hasta el servicio de habitaciones, tu experiencia será completamente satisfactoria.</p>
+			<p>Ya sea que estés de vacaciones en familia o necesites espacio adicional para tus compañeros de viaje, nuestra Habitación Familiar es la elección perfecta para asegurar una estancia agradable y relajante.</p>
+		  </section>
+		<div class="main-content-image">
+		  <img src="img/HabitacionFamiliar2.jpg" alt="Imagen del Hotel">
+		</div>
+	  </section>
+
+	  <section class="main-content-dos">
+		<div class="main-content-image-dos">
+		  <img src="img/HabitacionEjecutiva1.jpg" alt="Imagen del Hotel">
+		</div>
+		<section class="main-content-text-dos">
+		  <h1>Habitación Ejecutiva</h1>
+		  <p>Descubre la elegancia y el lujo en nuestra exclusiva Habitación Ejecutiva. Diseñada para satisfacer las necesidades de los viajeros más exigentes, esta habitación te brinda una experiencia de alojamiento incomparable.</p>
+		  <p>Relájate en la comodidad de una amplia cama king size y disfruta de todas las comodidades que Hotel Oasis tiene para ofrecer. Desde la plataforma de streaming hasta el minibar bien surtido, cada detalle ha sido cuidadosamente seleccionado para garantizar tu satisfacción.</p>
+		  <p>Además, podrás sumergirte en el lujo de un lujoso baño con bañera de hidromasaje y disfrutar de un balcón privado con impresionantes vistas (sujeto a disponibilidad). Nuestro servicio de habitaciones disponible las 24 horas asegurará que todas tus necesidades sean atendidas con prontitud y profesionalismo.</p>
+		  <p>Si buscas una experiencia de alojamiento excepcional, la Habitación Ejecutiva es la elección perfecta. Ya sea para un viaje de negocios o para consentirte en tus vacaciones, te garantizamos una estancia inolvidable.</p>
+		</section>
+	  </section>
+	  
+	  
+
+    <!-- BOTON CHAT BOT -->
+	
+	<button id="floatingButton" >
+		<img src="img/comentario.png" alt="">
+	</button>
+
+    <div id="formContainer">
+      <span id="closeButton">&times;</span>
+      
+      <form>
+		<h2 class="consul">Haz tus consultas</h2>	
+        <iframe src='https://webchat.botframework.com/embed/az-bohorquez-senati-2-bot?s=iqPNpYrBc9g.6aziACn8-Xt3_9zFY4mZHk_lngkZVT2qk9TsubeKywg'  style='min-width: 400px; width: 100%; min-height: 500px;'></iframe>
+      </form>
+    </div>
+	
+	<script>
+		
+		const formContainer = document.getElementById("formContainer");
+		const closeButton = document.getElementById("closeButton");
+
+		floatingButton.addEventListener("click", () => {
+    		formContainer.style.display = "block";
+		});
+
+		closeButton.addEventListener("click", () => {
+    		formContainer.style.display = "none";
+		});
+
+	</script>
+
+	<!-- FOOTER -->
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; 2023 Hotel Oasis. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>

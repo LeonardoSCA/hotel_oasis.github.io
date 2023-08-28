@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+	<link rel="stylesheet" type="text/css" href="style_fondo.css">
+	<link rel="stylesheet" type="text/css" href="stiles/style_chat.css">
+	<link rel="stylesheet" type="text/css" href="stiles/style_header.css">
+    <link rel="stylesheet" type="text/css" href="stiles/style_footer.css">
+	<link rel="stylesheet" type="text/css" href="stiles/style_index.css">
+	<script src="script.js"></script>	
+</head>
+<body class="zona1">
+	<header class="header">
+		<a class="logo" >
+			<img src="img/HotelOasis.png" >
+		</a>
+			
+		<nav>
+			<ul class="nav-links"> 
+				<li><a href="index.html">Inicio</a></li>
+				<li><a href="Habitaciones.html">Habitaciones</a></li>
+				<li><a href="Servicios.html">Servicios</a></li>
+                <li><a href="Q&A.html">Q&A</a></li>
+			</ul>
+		</nav>
+
+		<a class="btn">
+			<button class="btn-login">Iniciar sesión</button>
+			<button class="btn-register">Registrarse</button>
+		</a>
+	</header>
+	
+	<!-- INICIO -->
+
+	<section class="main-content">
+		<div class="main-content-text">
+			<h1>Bienvenido a Hotel Oasis</h1>
+			<p>¡Bienvenido a Hotel Oasis, tu refugio en el paraíso! Sumérgete en un mundo de lujo y comodidad en nuestro exclusivo hotel. Ubicado en un entorno idílico y rodeado de belleza natural, Hotel Oasis te ofrece una experiencia inigualable.</p>
+			<p>Nuestras espaciosas habitaciones y suites te brindarán la tranquilidad que necesitas, mientras que nuestros servicios de primer nivel garantizan tu relajación y satisfacción en cada momento. Desde nuestra piscina de aguas cristalinas hasta nuestros exquisitos restaurantes, cada detalle está diseñado para ofrecerte una escapada inolvidable.</p>
+			<p>Explora los alrededores y descubre la rica cultura local, disfruta de actividades emocionantes o simplemente relájate en nuestro spa de clase mundial. En Hotel Oasis, tu bienestar es nuestra máxima prioridad.</p>
+			<p>Nuestro amable personal está listo para hacer que tu estadía sea perfecta en todos los sentidos. Ya sea que viajes por negocios o placer, te invitamos a sumergirte en la serenidad y el lujo que te ofrece Hotel Oasis. Reserva tu estancia hoy mismo y descubre el paraíso que has estado esperando.</p>
+		</div>
+	</section>
+
+	<section class="main-img">
+	<div class="carousel-container">
+		<div class="carousel">
+			<div class="carousel-slide">
+				<img src="img/inicio-cuarto.jpg">
+			</div>
+			<div class="carousel-slide">
+				<img src="img/inicio-baño.jpg">
+			</div>
+			<div class="carousel-slide">
+				<img src="img/inicio-servicio.jpg">
+			</div>
+		</div>
+	</div>
+    </section>
+
+	<!-- CHAT BOT -->
+
+	<button id="floatingButton" >
+		<img src="img/comentario.png" alt="">
+	</button>
+
+    <div id="formContainer">
+      <span id="closeButton">&times;</span>
+      
+      <form>
+		<h2 class="consul">Haz tus consultas</h2>	
+        <iframe src='https://webchat.botframework.com/embed/az-bohorquez-senati-2-bot?s=iqPNpYrBc9g.6aziACn8-Xt3_9zFY4mZHk_lngkZVT2qk9TsubeKywg'  style='min-width: 400px; width: 100%; min-height: 500px;'></iframe>
+      </form>
+    </div>
+	
+	<section>
+    </section>
+
+	<script>
+		
+		const formContainer = document.getElementById("formContainer");
+		const closeButton = document.getElementById("closeButton");
+
+		floatingButton.addEventListener("click", () => {
+    		formContainer.style.display = "block";
+		});
+
+		closeButton.addEventListener("click", () => {
+    		formContainer.style.display = "none";
+		});
+
+	</script>
+
+	<!-- FOOTER -->
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; 2023 Hotel Oasis. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

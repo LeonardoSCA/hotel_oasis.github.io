@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<link rel="stylesheet" type="text/css" href="style_fondo.css">
+	<link rel="stylesheet" type="text/css" href="stiles/style_chat.css">
+	<link rel="stylesheet" type="text/css" href="stiles/style_footer.css">
+	<link rel="stylesheet" type="text/css" href="stiles/style_header.css">
+	<link rel="stylesheet" type="text/css" href="stiles/style_servicios.css">
+	<script src="script.js"></script>
+	<title>Servicios</title>
+</head>
+<body class = "zona1">
+	<header class="header">
+		<a class="logo" >
+			<img src="img/HotelOasis.png" >
+		</a>
+			
+		<nav>
+			<ul class="nav-links"> 
+				<li><a href="index.html">Inicio</a></li>
+				<li><a href="Habitaciones.html">Habitaciones</a></li>
+				<li><a href="Servicios.html">Servicios</a></li>
+                <li><a href="Q&A.html">Q&A</a></li>
+			</ul>
+		</nav>
+
+		<a class="btn">
+			<button class="btn-login">Iniciar sesión</button>
+			<button class="btn-register">Registrarse</button>
+		</a>
+	</header>
+
+    <!-- Servicios -->
+
+	<section class="main-content">
+		<section class="main-content-text">
+			<h1>Gimnasio Moderno</h1>
+  <p>Mantén tu rutina de ejercicios incluso durante tus vacaciones en Hotel Oasis con nuestro moderno gimnasio. Diseñado para satisfacer las necesidades de los amantes del fitness, nuestro gimnasio cuenta con equipos de última generación y un ambiente motivador.</p>
+  <p>Equipado con una variedad de máquinas cardiovasculares y de fuerza, podrás mantener tu salud y bienestar durante tu estancia. Nuestros entrenadores profesionales están disponibles para brindarte asesoramiento y orientación personalizada para ayudarte a alcanzar tus objetivos de fitness.</p>
+  <p>Después de una sesión de ejercicios, relájate en nuestra zona de recuperación con instalaciones de spa y saunas. Además, puedes disfrutar de bebidas refrescantes y aperitivos saludables en nuestra área de descanso.</p>
+  <p>En Hotel Oasis, comprendemos la importancia de mantener un estilo de vida saludable. Por eso, te ofrecemos un gimnasio excepcional donde podrás mantener tu energía y vitalidad durante toda tu estancia.</p>
+		  </section>
+		<div class="main-content-image">
+		  <img src="img/gim01.jpg" alt="Imagen del Hotel">
+		</div>
+	  </section>
+
+	  <section class="main-content-dos">
+		<div class="main-content-image-dos">
+		  <img src="img/Cochera01.jpg" alt="Imagen del Hotel">
+		</div>
+		<section class="main-content-text-dos">
+			<h1>Cochera Gratuita</h1>
+			<p>En Hotel Oasis, tu comodidad y seguridad son nuestra prioridad. Por eso, ofrecemos un servicio de cochera gratuito y seguro para tu vehículo. Sabemos lo importante que es tener un lugar seguro donde estacionar tu automóvil, y con nuestra cochera podrás disfrutar de tu estadía con total tranquilidad.</p>
+			<p>Nuestra cochera está diseñada para acomodar una variedad de vehículos, desde automóviles hasta camionetas. Ya sea que estés viajando por negocios o placer, tendrás la tranquilidad de saber que tu vehículo está resguardado y protegido durante toda tu estancia en Hotel Oasis.</p>
+			<p>Además de brindarte seguridad, nuestra cochera también te proporciona la conveniencia de un acceso fácil y rápido a tu vehículo. No tendrás que preocuparte por buscar estacionamiento en la ciudad, ya que tendrás tu lugar reservado en nuestras instalaciones.</p>
+			<p>Disfruta de una experiencia sin preocupaciones en Hotel Oasis, donde cada detalle está pensado para ofrecerte el máximo confort y satisfacción. Reserva tu estancia y aprovecha nuestra cochera gratuita para disfrutar de una estadía relajante y libre de estrés.</p>
+		</section>
+	  </section>
+
+
+    <!-- BOTON CHAT BOT -->
+	
+	<button id="floatingButton" >
+		<img src="img/comentario.png" alt="">
+	</button>
+
+    <div id="formContainer">
+      <span id="closeButton">&times;</span>
+      
+      <form>
+		<h2 class="consul">Haz tus consultas</h2>	
+        <iframe src='https://webchat.botframework.com/embed/az-bohorquez-senati-2-bot?s=iqPNpYrBc9g.6aziACn8-Xt3_9zFY4mZHk_lngkZVT2qk9TsubeKywg'  style='min-width: 400px; width: 100%; min-height: 500px;'></iframe>
+      </form>
+    </div>
+	
+	<script>
+		
+		const formContainer = document.getElementById("formContainer");
+		const closeButton = document.getElementById("closeButton");
+
+		floatingButton.addEventListener("click", () => {
+    		formContainer.style.display = "block";
+		});
+
+		closeButton.addEventListener("click", () => {
+    		formContainer.style.display = "none";
+		});
+
+	</script>
+
+	<!-- FOOTER -->
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; 2023 Hotel Oasis. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>

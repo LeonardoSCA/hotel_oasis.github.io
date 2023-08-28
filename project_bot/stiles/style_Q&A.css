@@ -1,0 +1,79 @@
+.container_general {
+    max-width: 800px;
+    margin: auto; 
+    margin-top: 100px;
+    margin-bottom: 100px;
+    padding: 2rem;
+    background-color: rgba(51, 51, 51, 0.7);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column; 
+}
+
+.container_qna {
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #b3593eb4;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    border: 1px solid #ffffff;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    position: relative;
+}
+
+.container_qna:hover {
+    background-color: #f78273b6;
+}
+
+.show {
+    display: block;
+}
+
+.question {
+    margin: 0;
+    padding: 0;
+    font-size: 1.2rem;
+    color: #ffffff;
+}
+
+.answer {
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.3s ease-in-out;
+
+    display: none;
+    /*position: absolute;*/
+    top: 100%;
+    left: 0;
+    width: 100%;
+    
+    margin-top: 10px; /* Agrega un margen superior */
+    padding: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    color: #ffffff;
+}
+
+.container_qna.active .answer {
+    display: block; /* Muestra la respuesta cuando el contenedor tiene la clase "active" */
+    max-height: 1000px;
+    padding-top: 10px;
+    background-color: #b3593eb4;
+}
+
+.container_qna.active {
+    background-color: #f78273b6; /* Cambia este color al que desees */
+}
+
+
+
+
